@@ -1,342 +1,778 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>vermino portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>vermino portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="video-bg">
+      <video width="320" height="240" autoplay loop muted>
+        <source
+          src="https://assets.codepen.io/3364143/7btrrd.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="dark-light">
+      <svg
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="1.5"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+      </svg>
+    </div>
+    <div class="app">
+      <div class="header">
+        <div class="menu-circle"></div>
+        <div class="header-menu">
+          <a class="menu-link is-active" href="#">Projects</a>
+          <a class="menu-link notify" href="#">Your work</a>
+          <a class="menu-link" href="#">Discover</a>
+          <a class="menu-link notify" href="#">Market</a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="header-profile">
+          <div class="notification">
+            <span class="notification-number">1</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-bell"
+            >
+              <path
+                d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"
+              />
+            </svg>
+          </div>
+          <svg viewBox="0 0 512 512" fill="currentColor">
+            <path
+              d="M448.773 235.551A135.893 135.893 0 00451 211c0-74.443-60.557-135-135-135-47.52 0-91.567 25.313-115.766 65.537-32.666-10.59-66.182-6.049-93.794 12.979-27.612 19.013-44.092 49.116-45.425 82.031C24.716 253.788 0 290.497 0 331c0 7.031 1.703 13.887 3.006 20.537l.015.015C12.719 400.492 56.034 436 106 436h300c57.891 0 106-47.109 106-105 0-40.942-25.053-77.798-63.227-95.449z"
+            />
+          </svg>
+          <img
+            class="profile-img"
+            src="https://i.ibb.co/QFFZCKS/telegram-cloud-photo-size-2-5341464485040343083-c.jpg"
+            alt=""
+          />
+        </div>
+      </div>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="video-bg">
- <video width="320" height="240" autoplay loop muted>
-  <source src="https://assets.codepen.io/3364143/7btrrd.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-</div>
-<div class="dark-light">
-    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-     <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" /></svg>
-   </div>
-<div class="app">
- <div class="header">
-  <div class="menu-circle"></div>
-  <div class="header-menu">
-   <a class="menu-link is-active" href="#">Projects</a>
-   <a class="menu-link notify" href="#">Your work</a>
-   <a class="menu-link" href="#">Discover</a>
-   <a class="menu-link notify" href="#">Market</a>
-  </div>
-  <div class="search-bar">
-   <input type="text" placeholder="Search">
-  </div>
-  <div class="header-profile">
-   <div class="notification">
-    <span class="notification-number">1</span>
-    <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
-     <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" />
-    </svg>
-   </div>
-   <svg viewBox="0 0 512 512" fill="currentColor">
-    <path d="M448.773 235.551A135.893 135.893 0 00451 211c0-74.443-60.557-135-135-135-47.52 0-91.567 25.313-115.766 65.537-32.666-10.59-66.182-6.049-93.794 12.979-27.612 19.013-44.092 49.116-45.425 82.031C24.716 253.788 0 290.497 0 331c0 7.031 1.703 13.887 3.006 20.537l.015.015C12.719 400.492 56.034 436 106 436h300c57.891 0 106-47.109 106-105 0-40.942-25.053-77.798-63.227-95.449z" />
-   </svg>
-   <img class="profile-img" src="https://i.ibb.co/QFFZCKS/telegram-cloud-photo-size-2-5341464485040343083-c.jpg" alt="">
-  </div>
- </div>
-
- 
- <div class="wrapper">
-  <div class="left-side">
-   <div class="side-wrapper">
-    <div class="side-title">Other info</div>
-    <div class="side-menu">
-     <a href="#">
-      <svg viewBox="0 0 512 512">
-       <g xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-        <path d="M0 0h128v128H0zm0 0M192 0h128v128H192zm0 0M384 0h128v128H384zm0 0M0 192h128v128H0zm0 0" data-original="#bfc9d1" />
-       </g>
-       <path xmlns="http://www.w3.org/2000/svg" d="M192 192h128v128H192zm0 0" fill="currentColor" data-original="#82b1ff" />
-       <path xmlns="http://www.w3.org/2000/svg" d="M384 192h128v128H384zm0 0M0 384h128v128H0zm0 0M192 384h128v128H192zm0 0M384 384h128v128H384zm0 0" fill="currentColor" data-original="#bfc9d1" />
-      </svg>
-      Biography
-     </a>
-     <a href="#">
-      <svg viewBox="0 0 488.932 488.932" fill="currentColor">
-       <path d="M243.158 61.361v-57.6c0-3.2 4-4.9 6.7-2.9l118.4 87c2 1.5 2 4.4 0 5.9l-118.4 87c-2.7 2-6.7.2-6.7-2.9v-57.5c-87.8 1.4-158.1 76-152.1 165.4 5.1 76.8 67.7 139.1 144.5 144 81.4 5.2 150.6-53 163-129.9 2.3-14.3 14.7-24.7 29.2-24.7 17.9 0 31.8 15.9 29 33.5-17.4 109.7-118.5 192-235.7 178.9-98-11-176.7-89.4-187.8-187.4-14.7-128.2 84.9-237.4 209.9-238.8z" />
-      </svg>
-      Updates
-      <span class="notification-number updates">3</span>
-     </a>
-    </div>
-   </div>
-   <div class="side-wrapper">
-    <div class="side-title">Categories</div>
-    <div class="side-menu">
-     <a href="#">
-      <svg viewBox="0 0 488.455 488.455" fill="currentColor">
-       <path d="M287.396 216.317c23.845 23.845 23.845 62.505 0 86.35s-62.505 23.845-86.35 0-23.845-62.505 0-86.35 62.505-23.845 86.35 0" />
-       <path d="M427.397 91.581H385.21l-30.544-61.059H133.76l-30.515 61.089-42.127.075C27.533 91.746.193 119.115.164 152.715L0 396.86c0 33.675 27.384 61.074 61.059 61.074h366.338c33.675 0 61.059-27.384 61.059-61.059V152.639c-.001-33.674-27.385-61.058-61.059-61.058zM244.22 381.61c-67.335 0-122.118-54.783-122.118-122.118s54.783-122.118 122.118-122.118 122.118 54.783 122.118 122.118S311.555 381.61 244.22 381.61z" />
-      </svg>
-      Photography
-     </a>
-     <a href="#">
-      <svg viewBox="0 0 512 512" fill="currentColor">
-       <circle cx="295.099" cy="327.254" r="110.96" transform="rotate(-45 295.062 327.332)" />
-       <path d="M471.854 338.281V163.146H296.72v41.169a123.1 123.1 0 01121.339 122.939c0 3.717-.176 7.393-.5 11.027zM172.14 327.254a123.16 123.16 0 01100.59-120.915L195.082 73.786 40.146 338.281H172.64c-.325-3.634-.5-7.31-.5-11.027z" />
-      </svg>
-      Graphic Design
-     </a>
-     <a href="#">
-      <svg viewBox="0 0 512 512" fill="currentColor">
-       <path d="M497 151H316c-8.401 0-15 6.599-15 15v300c0 8.401 6.599 15 15 15h181c8.401 0 15-6.599 15-15V166c0-8.401-6.599-15-15-15zm-76 270h-30c-8.401 0-15-6.599-15-15s6.599-15 15-15h30c8.401 0 15 6.599 15 15s-6.599 15-15 15zm0-180h-30c-8.401 0-15-6.599-15-15s6.599-15 15-15h30c8.401 0 15 6.599 15 15s-6.599 15-15 15z" />
-       <path d="M15 331h196v60h-75c-8.291 0-15 6.709-15 15s6.709 15 15 15h135v-30h-30v-60h30V166c0-24.814 20.186-45 45-45h135V46c0-8.284-6.716-15-15-15H15C6.716 31 0 37.716 0 46v270c0 8.284 6.716 15 15 15z" />
-      </svg>
-      Blog
-     </a>
-    
-    </div>
-   </div>
-   <div class="side-wrapper">
-    <div class="side-title">Fonts</div>
-    <div class="side-menu">
-     <a href="#">
-      <svg viewBox="0 0 332 332" fill="currentColor">
-       <path d="M282.341 8.283C275.765 2.705 266.211 0 253.103 0c-18.951 0-36.359 5.634-51.756 16.743-14.972 10.794-29.274 28.637-42.482 53.028-4.358 7.993-7.428 11.041-8.973 12.179h-26.255c-10.84 0-19.626 8.786-19.626 19.626 0 8.989 6.077 16.486 14.323 18.809l-.05.165h.589c1.531.385 3.109.651 4.757.651h18.833l-32.688 128.001c-7.208 27.848-10.323 37.782-11.666 41.24-1.445 3.711-3.266 7.062-5.542 10.135-.42-5.39-2.637-10.143-6.508-13.854-4.264-4.079-10.109-6.136-17.364-6.136-8.227 0-15.08 2.433-20.37 7.229-5.416 4.93-8.283 11.193-8.283 18.134 0 5.157 1.701 12.712 9.828 19.348 6.139 4.97 14.845 7.382 26.621 7.382 17.096 0 32.541-4.568 45.891-13.577 13.112-8.845 24.612-22.489 34.166-40.522 9.391-17.678 18.696-45.124 28.427-83.9l18.598-73.479h30.016c10.841 0 19.625-8.785 19.625-19.625s-8.784-19.626-19.625-19.626h-19.628c6.34-21.62 14.175-37.948 23.443-48.578 2.284-2.695 5.246-5.692 8.412-7.678-1.543 3.392-2.325 6.767-2.325 10.055 0 6.164 2.409 11.714 6.909 16.03 4.484 4.336 10.167 6.54 16.888 6.54 7.085 0 13.373-2.667 18.17-7.716 4.76-5.005 7.185-11.633 7.185-19.703.017-9.079-3.554-16.899-10.302-22.618z" />
-      </svg>
-      Manage Fonts
-     </a>
-    </div>
-   </div>
-   <div class="side-wrapper">
-    <div class="side-title">Contact Links</div>
-    <div class="side-menu">
-     <a href="#">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 18">
-        <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-      </svg>
-      iMessage
-     </a>
-     <a href="#">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-      </svg>
-      Phone
-     </a>
-     <a href="#">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 19">
-        <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
-        <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
-      </svg>
-      Mail
-     </a>
-     <a href="#">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 17 17  ">
-        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
-      </svg>
-      Telegram
-     </a>
-     <a href="#">
-      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-instagram" viewBox="0 0 17 17">
-        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-      </svg>
-      Instagram
-    </a>
-    
-    
-    </div>
-   </div>
-  </div>
-  <div class="main-container">
-   <div class="main-header">
-    <a class="menu-link-main" href="#">Portfolio of Vermino</a>
-    <div class="header-menu">
-     <a class="main-header-link is-active" href="#">Telegram Bots</a>
-   <!-- <a class="main-header-link" href="#">Mobile</a>
+      <div class="wrapper">
+        <div class="left-side">
+          <div class="side-wrapper">
+            <div class="side-title">Other info</div>
+            <div class="side-menu">
+              <a href="#">
+                <svg viewBox="0 0 512 512">
+                  <g xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <path
+                      d="M0 0h128v128H0zm0 0M192 0h128v128H192zm0 0M384 0h128v128H384zm0 0M0 192h128v128H0zm0 0"
+                      data-original="#bfc9d1"
+                    />
+                  </g>
+                  <path
+                    xmlns="http://www.w3.org/2000/svg"
+                    d="M192 192h128v128H192zm0 0"
+                    fill="currentColor"
+                    data-original="#82b1ff"
+                  />
+                  <path
+                    xmlns="http://www.w3.org/2000/svg"
+                    d="M384 192h128v128H384zm0 0M0 384h128v128H0zm0 0M192 384h128v128H192zm0 0M384 384h128v128H384zm0 0"
+                    fill="currentColor"
+                    data-original="#bfc9d1"
+                  />
+                </svg>
+                Biography
+              </a>
+              <a href="#">
+                <svg viewBox="0 0 488.932 488.932" fill="currentColor">
+                  <path
+                    d="M243.158 61.361v-57.6c0-3.2 4-4.9 6.7-2.9l118.4 87c2 1.5 2 4.4 0 5.9l-118.4 87c-2.7 2-6.7.2-6.7-2.9v-57.5c-87.8 1.4-158.1 76-152.1 165.4 5.1 76.8 67.7 139.1 144.5 144 81.4 5.2 150.6-53 163-129.9 2.3-14.3 14.7-24.7 29.2-24.7 17.9 0 31.8 15.9 29 33.5-17.4 109.7-118.5 192-235.7 178.9-98-11-176.7-89.4-187.8-187.4-14.7-128.2 84.9-237.4 209.9-238.8z"
+                  />
+                </svg>
+                Updates
+                <span class="notification-number updates">3</span>
+              </a>
+            </div>
+          </div>
+          <div class="side-wrapper">
+            <div class="side-title">Categories</div>
+            <div class="side-menu">
+              <a href="#">
+                <svg viewBox="0 0 488.455 488.455" fill="currentColor">
+                  <path
+                    d="M287.396 216.317c23.845 23.845 23.845 62.505 0 86.35s-62.505 23.845-86.35 0-23.845-62.505 0-86.35 62.505-23.845 86.35 0"
+                  />
+                  <path
+                    d="M427.397 91.581H385.21l-30.544-61.059H133.76l-30.515 61.089-42.127.075C27.533 91.746.193 119.115.164 152.715L0 396.86c0 33.675 27.384 61.074 61.059 61.074h366.338c33.675 0 61.059-27.384 61.059-61.059V152.639c-.001-33.674-27.385-61.058-61.059-61.058zM244.22 381.61c-67.335 0-122.118-54.783-122.118-122.118s54.783-122.118 122.118-122.118 122.118 54.783 122.118 122.118S311.555 381.61 244.22 381.61z"
+                  />
+                </svg>
+                Photography
+              </a>
+              <a href="#">
+                <svg viewBox="0 0 512 512" fill="currentColor">
+                  <circle
+                    cx="295.099"
+                    cy="327.254"
+                    r="110.96"
+                    transform="rotate(-45 295.062 327.332)"
+                  />
+                  <path
+                    d="M471.854 338.281V163.146H296.72v41.169a123.1 123.1 0 01121.339 122.939c0 3.717-.176 7.393-.5 11.027zM172.14 327.254a123.16 123.16 0 01100.59-120.915L195.082 73.786 40.146 338.281H172.64c-.325-3.634-.5-7.31-.5-11.027z"
+                  />
+                </svg>
+                Graphic Design
+              </a>
+              <a href="#">
+                <svg viewBox="0 0 512 512" fill="currentColor">
+                  <path
+                    d="M497 151H316c-8.401 0-15 6.599-15 15v300c0 8.401 6.599 15 15 15h181c8.401 0 15-6.599 15-15V166c0-8.401-6.599-15-15-15zm-76 270h-30c-8.401 0-15-6.599-15-15s6.599-15 15-15h30c8.401 0 15 6.599 15 15s-6.599 15-15 15zm0-180h-30c-8.401 0-15-6.599-15-15s6.599-15 15-15h30c8.401 0 15 6.599 15 15s-6.599 15-15 15z"
+                  />
+                  <path
+                    d="M15 331h196v60h-75c-8.291 0-15 6.709-15 15s6.709 15 15 15h135v-30h-30v-60h30V166c0-24.814 20.186-45 45-45h135V46c0-8.284-6.716-15-15-15H15C6.716 31 0 37.716 0 46v270c0 8.284 6.716 15 15 15z"
+                  />
+                </svg>
+                Blog
+              </a>
+            </div>
+          </div>
+          <div class="side-wrapper">
+            <div class="side-title">Fonts</div>
+            <div class="side-menu">
+              <a href="#">
+                <svg viewBox="0 0 332 332" fill="currentColor">
+                  <path
+                    d="M282.341 8.283C275.765 2.705 266.211 0 253.103 0c-18.951 0-36.359 5.634-51.756 16.743-14.972 10.794-29.274 28.637-42.482 53.028-4.358 7.993-7.428 11.041-8.973 12.179h-26.255c-10.84 0-19.626 8.786-19.626 19.626 0 8.989 6.077 16.486 14.323 18.809l-.05.165h.589c1.531.385 3.109.651 4.757.651h18.833l-32.688 128.001c-7.208 27.848-10.323 37.782-11.666 41.24-1.445 3.711-3.266 7.062-5.542 10.135-.42-5.39-2.637-10.143-6.508-13.854-4.264-4.079-10.109-6.136-17.364-6.136-8.227 0-15.08 2.433-20.37 7.229-5.416 4.93-8.283 11.193-8.283 18.134 0 5.157 1.701 12.712 9.828 19.348 6.139 4.97 14.845 7.382 26.621 7.382 17.096 0 32.541-4.568 45.891-13.577 13.112-8.845 24.612-22.489 34.166-40.522 9.391-17.678 18.696-45.124 28.427-83.9l18.598-73.479h30.016c10.841 0 19.625-8.785 19.625-19.625s-8.784-19.626-19.625-19.626h-19.628c6.34-21.62 14.175-37.948 23.443-48.578 2.284-2.695 5.246-5.692 8.412-7.678-1.543 3.392-2.325 6.767-2.325 10.055 0 6.164 2.409 11.714 6.909 16.03 4.484 4.336 10.167 6.54 16.888 6.54 7.085 0 13.373-2.667 18.17-7.716 4.76-5.005 7.185-11.633 7.185-19.703.017-9.079-3.554-16.899-10.302-22.618z"
+                  />
+                </svg>
+                Manage Fonts
+              </a>
+            </div>
+          </div>
+          <div class="side-wrapper">
+            <div class="side-title">Contact Links</div>
+            <div class="side-menu">
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chat-dots-fill"
+                  viewBox="0 0 16 18"
+                >
+                  <path
+                    d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                  />
+                </svg>
+                iMessage
+              </a>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-telephone-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                  />
+                </svg>
+                Phone
+              </a>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-envelope-at"
+                  viewBox="0 0 16 19"
+                >
+                  <path
+                    d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"
+                  />
+                  <path
+                    d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"
+                  />
+                </svg>
+                Mail
+              </a>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-telegram"
+                  viewBox="0 0 17 17  "
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+                  />
+                </svg>
+                Telegram
+              </a>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="currentColor"
+                  class="bi bi-instagram"
+                  viewBox="0 0 17 17"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  />
+                </svg>
+                Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="main-header">
+            <a class="menu-link-main" href="#">Portfolio of Vermino</a>
+            <div class="header-menu">
+              <a class="main-header-link is-active" href="#">Telegram Bots</a>
+              <!-- <a class="main-header-link" href="#">Mobile</a>
      <a class="main-header-link" href="#">Web</a>
    -->
-    </div>
-   </div>
-   <div class="content-wrapper">
-    <div class="content-wrapper-header">
-     <div class="content-wrapper-context">
-      <h3 class="img-content">
-       <svg viewBox="0 0 512 512">
-        <path d="M467 0H45C20.099 0 0 20.099 0 45v422c0 24.901 20.099 45 45 45h422c24.901 0 45-20.099 45-45V45c0-24.901-20.099-45-45-45z" fill="#d6355b" data-original="#ff468c" />
-        <path xmlns="http://www.w3.org/2000/svg" d="M512 45v422c0 24.901-20.099 45-45 45H256V0h211c24.901 0 45 20.099 45 45z" fill="#d6355b" data-original="#d72878" />
-        <path xmlns="http://www.w3.org/2000/svg" d="M467 30H45c-8.401 0-15 6.599-15 15v422c0 8.401 6.599 15 15 15h422c8.401 0 15-6.599 15-15V45c0-8.401-6.599-15-15-15z" fill="#2e000a" data-original="#700029" />
-        <path xmlns="http://www.w3.org/2000/svg" d="M482 45v422c0 8.401-6.599 15-15 15H256V30h211c8.401 0 15 6.599 15 15z" fill="#2e000a" data-original="#4d0e06" />
-        <path xmlns="http://www.w3.org/2000/svg" d="M181 391c-41.353 0-75-33.647-75-75 0-8.291 6.709-15 15-15s15 6.709 15 15c0 24.814 20.186 45 45 45s45-20.186 45-45-20.186-45-45-45c-41.353 0-75-33.647-75-75s33.647-75 75-75 75 33.647 75 75c0 8.291-6.709 15-15 15s-15-6.709-15-15c0-24.814-20.186-45-45-45s-45 20.186-45 45 20.186 45 45 45c41.353 0 75 33.647 75 75s-33.647 75-75 75z" fill="#d6355b" data-original="#ff468c" />
-        <path xmlns="http://www.w3.org/2000/svg" d="M391 361h-30c-8.276 0-15-6.724-15-15V211h45c8.291 0 15-6.709 15-15s-6.709-15-15-15h-45v-45c0-8.291-6.709-15-15-15s-15 6.709-15 15v45h-15c-8.291 0-15 6.709-15 15s6.709 15 15 15h15v135c0 24.814 20.186 45 45 45h30c8.291 0 15-6.709 15-15s-6.709-15-15-15z" fill="#d6355b" data-original="#d72878" />
-       </svg>
-       Want to order telegram bots and websites?
-      </h3>
-      <div class="content-text">Professional telegram bot creating as your needs. 24/7 support for finished bots.</div>
-      <button class="content-button">Hire me</button>
-      <button class="content-button">Download CV</button>
-     </div>
-     <img class="content-wrapper-img" src="https://assets.codepen.io/3364143/glass.png" alt="">
-    </div>
-    <div class="content-section">
-     <div class="content-section-title">Recent works</div>
-     <ul>
-     
-      <li class="adobe-product">
-       <div class="products">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 50 50" id="telegram"><rect width="48" height="48" fill="#419FD9" rx="24"></rect><rect width="48" height="48" fill="url(#paint0_linear)" rx="24"></rect><path fill="#fff" d="M10.7874 23.4709C17.7667 20.3663 22.4206 18.3195 24.7493 17.3305C31.3979 14.507 32.7795 14.0165 33.68 14.0002C33.878 13.9968 34.3208 14.0469 34.6077 14.2845C34.8499 14.4852 34.9165 14.7563 34.9484 14.9465C34.9803 15.1368 35.02 15.5702 34.9884 15.9088C34.6281 19.774 33.0692 29.1539 32.276 33.483C31.9404 35.3148 31.2796 35.929 30.6399 35.9891C29.2496 36.1197 28.1938 35.051 26.8473 34.1497C24.7401 32.7395 23.5498 31.8615 21.5044 30.4854C19.1407 28.895 20.673 28.0209 22.0201 26.5923C22.3726 26.2185 28.4983 20.5295 28.6169 20.0135C28.6317 19.9489 28.6455 19.7083 28.5055 19.5813C28.3655 19.4543 28.1589 19.4977 28.0098 19.5322C27.7985 19.5812 24.4323 21.8529 17.9113 26.3473C16.9558 27.0172 16.0904 27.3435 15.315 27.3264C14.4602 27.3076 12.8159 26.833 11.5935 26.4273C10.0942 25.9296 8.90254 25.6666 9.0063 24.8215C9.06035 24.3813 9.65403 23.9311 10.7874 23.4709Z"></path><defs><linearGradient id="paint0_linear" x1="24" x2="24" y2="47.644" gradientUnits="userSpaceOnUse"><stop stop-color="#2AABEE"></stop><stop offset="1" stop-color="#229ED9"></stop></linearGradient></defs></svg>
-        
-        @haadreport_bot
-       </div>
-
-       <span class="status">
-        <span class="status-circle"></span>
-        Monitor reports for CEO of HAAD</span>
-       <div class="button-wrapper">
-        <button class="content-button status-button" id="btn1">More info</button>
-        <div class="pop-up">
-         <div class="pop-up__title">Brief info about project
-          <svg class="close" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle">
-           <circle cx="12" cy="12" r="10" />
-           <path d="M15 9l-6 6M9 9l6 6" />
-          </svg>
-         </div>
-         <div class="pop-up__subtitle">Ordered by Saud Abdulwahed for monitoring staffs work at edu center!. Has tiny admin dashboard and works for only Saud Abdulwahed <a href="https://t.me/vermino">Learn more</a></div>
-         <div class="content-button-wrapper">
-          <button class="content-button status-button open close">Cancel</button>
-          <button class="content-button status-button">Open bot</button>
-         </div>
-        </div>
-        <div class="menu">
-         <button class="dropdown">
-          <ul>
-           <li><a href="#">Go to Discover</a></li>
-           <li><a href="#">Learn more</a></li>
-           <li><a href="#">Uninstall</a></li>
-          </ul>
-         </button>
-        </div>
-       </div>
-      </li>
-      <li class="adobe-product">
-        <div class="products">
-         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 50 50" id="telegram"><rect width="48" height="48" fill="#05f571" rx="24"></rect><rect width="48" height="48" fill="url(#paint0_linear)" rx="24"></rect><path fill="#fff" d="M10.7874 23.4709C17.7667 20.3663 22.4206 18.3195 24.7493 17.3305C31.3979 14.507 32.7795 14.0165 33.68 14.0002C33.878 13.9968 34.3208 14.0469 34.6077 14.2845C34.8499 14.4852 34.9165 14.7563 34.9484 14.9465C34.9803 15.1368 35.02 15.5702 34.9884 15.9088C34.6281 19.774 33.0692 29.1539 32.276 33.483C31.9404 35.3148 31.2796 35.929 30.6399 35.9891C29.2496 36.1197 28.1938 35.051 26.8473 34.1497C24.7401 32.7395 23.5498 31.8615 21.5044 30.4854C19.1407 28.895 20.673 28.0209 22.0201 26.5923C22.3726 26.2185 28.4983 20.5295 28.6169 20.0135C28.6317 19.9489 28.6455 19.7083 28.5055 19.5813C28.3655 19.4543 28.1589 19.4977 28.0098 19.5322C27.7985 19.5812 24.4323 21.8529 17.9113 26.3473C16.9558 27.0172 16.0904 27.3435 15.315 27.3264C14.4602 27.3076 12.8159 26.833 11.5935 26.4273C10.0942 25.9296 8.90254 25.6666 9.0063 24.8215C9.06035 24.3813 9.65403 23.9311 10.7874 23.4709Z"></path><defs><linearGradient id="paint0_linear" x1="24" x2="24" y2="47.644" gradientUnits="userSpaceOnUse"><stop stop-color="#2AABEE"></stop><stop offset="1" stop-color="#229ED9"></stop></linearGradient></defs></svg>
-         
-         @haadro_bot
-        </div>
- 
-        <span class="status">
-         <span class="status-circle"></span>
-         InfoBot for HAAD IT center!</span>
-        <div class="button-wrapper">
-         <button class="content-button status-button">More info</button>
-         <div class="pop-up">
-          <div class="pop-up__title">Brief info about project
-           <svg class="close" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle">
-            <circle cx="12" cy="12" r="10" />
-            <path d="M15 9l-6 6M9 9l6 6" />
-           </svg>
+            </div>
           </div>
-          <div class="pop-up__subtitle">Ordered by <a href="https://t.me/saudabdulwahed">Saud Abdulwahed</a> for giving information about "Haad LC IT center" to people who want to study at there... and has registration form for cources! <a href="https://t.me/vermino">Learn more</a></div>
-          <div class="content-button-wrapper">
-           <button class="content-button status-button open close">Cancel</button>
-           <button class="content-button status-button">Open bot</button>
-          </div>
-         </div>
-         <div class="menu">
-          <button class="dropdown">
-           <ul>
-            <li><a href="#">Go to Discover</a></li>
-            <li><a href="#">Learn more</a></li>
-            <li><a href="#">Uninstall</a></li>
-           </ul>
-          </button>
-         </div>
-        </div>
-       </li>
-      <li class="adobe-product">
-       <div class="products">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 50 50" id="telegram"><rect width="48" height="48" fill="#419FD9" rx="24"></rect><rect width="48" height="48" fill="url(#paint0_linear)" rx="24"></rect><path fill="#fff" d="M10.7874 23.4709C17.7667 20.3663 22.4206 18.3195 24.7493 17.3305C31.3979 14.507 32.7795 14.0165 33.68 14.0002C33.878 13.9968 34.3208 14.0469 34.6077 14.2845C34.8499 14.4852 34.9165 14.7563 34.9484 14.9465C34.9803 15.1368 35.02 15.5702 34.9884 15.9088C34.6281 19.774 33.0692 29.1539 32.276 33.483C31.9404 35.3148 31.2796 35.929 30.6399 35.9891C29.2496 36.1197 28.1938 35.051 26.8473 34.1497C24.7401 32.7395 23.5498 31.8615 21.5044 30.4854C19.1407 28.895 20.673 28.0209 22.0201 26.5923C22.3726 26.2185 28.4983 20.5295 28.6169 20.0135C28.6317 19.9489 28.6455 19.7083 28.5055 19.5813C28.3655 19.4543 28.1589 19.4977 28.0098 19.5322C27.7985 19.5812 24.4323 21.8529 17.9113 26.3473C16.9558 27.0172 16.0904 27.3435 15.315 27.3264C14.4602 27.3076 12.8159 26.833 11.5935 26.4273C10.0942 25.9296 8.90254 25.6666 9.0063 24.8215C9.06035 24.3813 9.65403 23.9311 10.7874 23.4709Z"></path><defs><linearGradient id="paint0_linear" x1="24" x2="24" y2="47.644" gradientUnits="userSpaceOnUse"><stop stop-color="#2AABEE"></stop><stop offset="1" stop-color="#229ED9"></stop></linearGradient></defs></svg>
-        
-        @swiftsave_bot
-       </div>
-       <span class="status">
-        <span class="status-circle green"></span>
-        Social media downloader</span>
-       <div class="button-wrapper">
-        <button class="content-button status-button open">Open</button>
-        <div class="menu">
-         <button class="dropdown">
-          <ul>
-           <li><a href="#">Go to Discover</a></li>
-           <li><a href="#">Learn more</a></li>
-           <li><a href="#">Uninstall</a></li>
-          </ul>
-         </button>
-        </div>
-       </div>
-      </li>
-     </ul>
-    </div>
-    <div class="content-section">
-     <div class="content-section-title">Other projects</div>
-     <div class="apps-card">
-      <div class="app-card">
-       <span>
-        <svg viewBox="0 0 512 512" style="border: 1px solid #a059a9">
-         <path xmlns="http://www.w3.org/2000/svg" d="M480 0H32C14.368 0 0 14.368 0 32v448c0 17.664 14.368 32 32 32h448c17.664 0 32-14.336 32-32V32c0-17.632-14.336-32-32-32z" fill="#210027" data-original="#7b1fa2" />
-         <g xmlns="http://www.w3.org/2000/svg">
-          <path d="M192 64h-80c-8.832 0-16 7.168-16 16v352c0 8.832 7.168 16 16 16s16-7.168 16-16V256h64c52.928 0 96-43.072 96-96s-43.072-96-96-96zm0 160h-64V96h64c35.296 0 64 28.704 64 64s-28.704 64-64 64zM400 256h-32c-18.08 0-34.592 6.24-48 16.384V272c0-8.864-7.168-16-16-16s-16 7.136-16 16v160c0 8.832 7.168 16 16 16s16-7.168 16-16v-96c0-26.464 21.536-48 48-48h32c8.832 0 16-7.168 16-16s-7.168-16-16-16z" fill="#f6e7fa" data-original="#e1bee7" />
-         </g>
-        </svg>
-        Premiere Pro
-       </span>
-       <div class="app-card__subtext">Edit, master and create fully proffesional videos</div>
-       <div class="app-card-buttons">
-        <button class="content-button status-button">Update</button>
-        <div class="menu"></div>
-       </div>
-      </div>
-      <div class="app-card">
-       <span>
-        <svg viewBox="0 0 52 52" style="border: 1px solid #c1316d">
-         <g xmlns="http://www.w3.org/2000/svg">
-          <path d="M40.824 52H11.176C5.003 52 0 46.997 0 40.824V11.176C0 5.003 5.003 0 11.176 0h29.649C46.997 0 52 5.003 52 11.176v29.649C52 46.997 46.997 52 40.824 52z" fill="#2f0015" data-original="#6f2b41" />
-          <path d="M18.08 39H15.2V13.72l-2.64-.08V11h5.52v28zM27.68 19.4c1.173-.507 2.593-.761 4.26-.761s3.073.374 4.22 1.12V11h2.88v28c-2.293.32-4.414.48-6.36.48-1.947 0-3.707-.4-5.28-1.2-2.08-1.066-3.12-2.92-3.12-5.561v-7.56c0-2.799 1.133-4.719 3.4-5.759zm8.48 3.12c-1.387-.746-2.907-1.119-4.56-1.119-1.574 0-2.714.406-3.42 1.22-.707.813-1.06 1.847-1.06 3.1v7.12c0 1.227.44 2.188 1.32 2.88.96.719 2.146 1.079 3.56 1.079 1.413 0 2.8-.106 4.16-.319V22.52z" fill="#e1c1cf" data-original="#ff70bd" />
-         </g>
-        </svg>
-        InDesign
-       </span>
-       <div class="app-card__subtext">Design and publish great projects & mockups</div>
-       <div class="app-card-buttons">
-        <button class="content-button status-button">Update</button>
-        <div class="menu"></div>
-       </div>
-      </div>
-      <div class="app-card">
-       <span>
-        <svg viewBox="0 0 52 52" style="border: 1px solid #C75DEB">
-         <g xmlns="http://www.w3.org/2000/svg">
-          <path d="M40.824 52H11.176C5.003 52 0 46.997 0 40.824V11.176C0 5.003 5.003 0 11.176 0h29.649C46.997 0 52 5.003 52 11.176v29.649C52 46.997 46.997 52 40.824 52z" fill="#3a3375" data-original="#3a3375" />
-          <path d="M27.44 39H24.2l-2.76-9.04h-8.32L10.48 39H7.36l8.24-28h3.32l8.52 28zm-6.72-12l-3.48-11.36L13.88 27h6.84zM31.48 33.48c0 2.267 1.333 3.399 4 3.399 1.653 0 3.466-.546 5.44-1.64L42 37.6c-2.054 1.254-4.2 1.881-6.44 1.881-4.64 0-6.96-1.946-6.96-5.841v-8.2c0-2.16.673-3.841 2.02-5.04 1.346-1.2 3.126-1.801 5.34-1.801s3.94.594 5.18 1.78c1.24 1.187 1.86 2.834 1.86 4.94V30.8l-11.52.6v2.08zm8.6-5.24v-3.08c0-1.413-.44-2.42-1.32-3.021-.88-.6-1.907-.899-3.08-.899-1.174 0-2.167.359-2.98 1.08-.814.72-1.22 1.773-1.22 3.16v3.199l8.6-.439z" fill="#e4d1eb" data-original="#e7adfb" />
-         </g>
-        </svg>
-        After Effects
-       </span>
-       <div class="app-card__subtext">Industry Standart motion graphics & visual effects</div>
-       <div class="app-card-buttons">
-        <button class="content-button status-button">Update</button>
-        <div class="menu"></div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-  </div>
- </div>
- <div class="overlay-app"></div>
-</div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+          <div class="content-wrapper">
+            <div class="content-wrapper-header">
+              <div class="content-wrapper-context">
+                <h3 class="img-content">
+                  <svg viewBox="0 0 512 512">
+                    <path
+                      d="M467 0H45C20.099 0 0 20.099 0 45v422c0 24.901 20.099 45 45 45h422c24.901 0 45-20.099 45-45V45c0-24.901-20.099-45-45-45z"
+                      fill="#d6355b"
+                      data-original="#ff468c"
+                    />
+                    <path
+                      xmlns="http://www.w3.org/2000/svg"
+                      d="M512 45v422c0 24.901-20.099 45-45 45H256V0h211c24.901 0 45 20.099 45 45z"
+                      fill="#d6355b"
+                      data-original="#d72878"
+                    />
+                    <path
+                      xmlns="http://www.w3.org/2000/svg"
+                      d="M467 30H45c-8.401 0-15 6.599-15 15v422c0 8.401 6.599 15 15 15h422c8.401 0 15-6.599 15-15V45c0-8.401-6.599-15-15-15z"
+                      fill="#2e000a"
+                      data-original="#700029"
+                    />
+                    <path
+                      xmlns="http://www.w3.org/2000/svg"
+                      d="M482 45v422c0 8.401-6.599 15-15 15H256V30h211c8.401 0 15 6.599 15 15z"
+                      fill="#2e000a"
+                      data-original="#4d0e06"
+                    />
+                    <path
+                      xmlns="http://www.w3.org/2000/svg"
+                      d="M181 391c-41.353 0-75-33.647-75-75 0-8.291 6.709-15 15-15s15 6.709 15 15c0 24.814 20.186 45 45 45s45-20.186 45-45-20.186-45-45-45c-41.353 0-75-33.647-75-75s33.647-75 75-75 75 33.647 75 75c0 8.291-6.709 15-15 15s-15-6.709-15-15c0-24.814-20.186-45-45-45s-45 20.186-45 45 20.186 45 45 45c41.353 0 75 33.647 75 75s-33.647 75-75 75z"
+                      fill="#d6355b"
+                      data-original="#ff468c"
+                    />
+                    <path
+                      xmlns="http://www.w3.org/2000/svg"
+                      d="M391 361h-30c-8.276 0-15-6.724-15-15V211h45c8.291 0 15-6.709 15-15s-6.709-15-15-15h-45v-45c0-8.291-6.709-15-15-15s-15 6.709-15 15v45h-15c-8.291 0-15 6.709-15 15s6.709 15 15 15h15v135c0 24.814 20.186 45 45 45h30c8.291 0 15-6.709 15-15s-6.709-15-15-15z"
+                      fill="#d6355b"
+                      data-original="#d72878"
+                    />
+                  </svg>
+                  Want to order telegram bots and websites?
+                </h3>
+                <div class="content-text">
+                  Professional telegram bot creating as your needs. 24/7 support
+                  for finished bots.
+                </div>
+                <button class="content-button">Hire me</button>
+                <button class="content-button">Download CV</button>
+              </div>
+              <img
+                class="content-wrapper-img"
+                src="https://assets.codepen.io/3364143/glass.png"
+                alt=""
+              />
+            </div>
+            <div class="content-section">
+              <div class="content-section-title">Recent works</div>
+              <ul>
+                <li class="adobe-product">
+                  <div class="products">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="48"
+                      height="48"
+                      fill="none"
+                      viewBox="0 0 50 50"
+                      id="telegram"
+                    >
+                      <rect
+                        width="48"
+                        height="48"
+                        fill="#419FD9"
+                        rx="24"
+                      ></rect>
+                      <rect
+                        width="48"
+                        height="48"
+                        fill="url(#paint0_linear)"
+                        rx="24"
+                      ></rect>
+                      <path
+                        fill="#fff"
+                        d="M10.7874 23.4709C17.7667 20.3663 22.4206 18.3195 24.7493 17.3305C31.3979 14.507 32.7795 14.0165 33.68 14.0002C33.878 13.9968 34.3208 14.0469 34.6077 14.2845C34.8499 14.4852 34.9165 14.7563 34.9484 14.9465C34.9803 15.1368 35.02 15.5702 34.9884 15.9088C34.6281 19.774 33.0692 29.1539 32.276 33.483C31.9404 35.3148 31.2796 35.929 30.6399 35.9891C29.2496 36.1197 28.1938 35.051 26.8473 34.1497C24.7401 32.7395 23.5498 31.8615 21.5044 30.4854C19.1407 28.895 20.673 28.0209 22.0201 26.5923C22.3726 26.2185 28.4983 20.5295 28.6169 20.0135C28.6317 19.9489 28.6455 19.7083 28.5055 19.5813C28.3655 19.4543 28.1589 19.4977 28.0098 19.5322C27.7985 19.5812 24.4323 21.8529 17.9113 26.3473C16.9558 27.0172 16.0904 27.3435 15.315 27.3264C14.4602 27.3076 12.8159 26.833 11.5935 26.4273C10.0942 25.9296 8.90254 25.6666 9.0063 24.8215C9.06035 24.3813 9.65403 23.9311 10.7874 23.4709Z"
+                      ></path>
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear"
+                          x1="24"
+                          x2="24"
+                          y2="47.644"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#2AABEE"></stop>
+                          <stop offset="1" stop-color="#229ED9"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
 
-</body>
+                    @haadreport_bot
+                  </div>
+
+                  <span class="status">
+                    <span class="status-circle"></span>
+                    Monitor reports for CEO of HAAD</span
+                  >
+                  <div class="button-wrapper">
+                    <button class="content-button status-button" id="btn1">
+                      More info
+                    </button>
+                    <div class="pop-up">
+                      <div class="pop-up__title">
+                        Brief info about project
+                        <svg
+                          class="close"
+                          width="24"
+                          height="24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-x-circle"
+                        >
+                          <circle cx="12" cy="12" r="10" />
+                          <path d="M15 9l-6 6M9 9l6 6" />
+                        </svg>
+                      </div>
+                      <div class="pop-up__subtitle">
+                        Ordered by Saud Abdulwahed for monitoring staffs work at
+                        edu center!. Has tiny admin dashboard and works for only
+                        Saud Abdulwahed
+                        <a href="https://t.me/vermino">Learn more</a>
+                      </div>
+                      <div class="content-button-wrapper">
+                        <button class="content-button status-button open close">
+                          Cancel
+                        </button>
+                        <button class="content-button status-button">
+                          Open bot
+                        </button>
+                      </div>
+                    </div>
+                    <div class="menu">
+                      <button class="dropdown">
+                        <ul>
+                          <li><a href="#">Go to Discover</a></li>
+                          <li><a href="#">Learn more</a></li>
+                          <li><a href="#">Uninstall</a></li>
+                        </ul>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="adobe-product">
+                  <div class="products">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="48"
+                      height="48"
+                      fill="none"
+                      viewBox="0 0 50 50"
+                      id="telegram"
+                    >
+                      <rect
+                        width="48"
+                        height="48"
+                        fill="#05f571"
+                        rx="24"
+                      ></rect>
+                      <rect
+                        width="48"
+                        height="48"
+                        fill="url(#paint0_linear)"
+                        rx="24"
+                      ></rect>
+                      <path
+                        fill="#fff"
+                        d="M10.7874 23.4709C17.7667 20.3663 22.4206 18.3195 24.7493 17.3305C31.3979 14.507 32.7795 14.0165 33.68 14.0002C33.878 13.9968 34.3208 14.0469 34.6077 14.2845C34.8499 14.4852 34.9165 14.7563 34.9484 14.9465C34.9803 15.1368 35.02 15.5702 34.9884 15.9088C34.6281 19.774 33.0692 29.1539 32.276 33.483C31.9404 35.3148 31.2796 35.929 30.6399 35.9891C29.2496 36.1197 28.1938 35.051 26.8473 34.1497C24.7401 32.7395 23.5498 31.8615 21.5044 30.4854C19.1407 28.895 20.673 28.0209 22.0201 26.5923C22.3726 26.2185 28.4983 20.5295 28.6169 20.0135C28.6317 19.9489 28.6455 19.7083 28.5055 19.5813C28.3655 19.4543 28.1589 19.4977 28.0098 19.5322C27.7985 19.5812 24.4323 21.8529 17.9113 26.3473C16.9558 27.0172 16.0904 27.3435 15.315 27.3264C14.4602 27.3076 12.8159 26.833 11.5935 26.4273C10.0942 25.9296 8.90254 25.6666 9.0063 24.8215C9.06035 24.3813 9.65403 23.9311 10.7874 23.4709Z"
+                      ></path>
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear"
+                          x1="24"
+                          x2="24"
+                          y2="47.644"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#2AABEE"></stop>
+                          <stop offset="1" stop-color="#229ED9"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+
+                    @haadro_bot
+                  </div>
+
+                  <span class="status">
+                    <span class="status-circle"></span>
+                    InfoBot for HAAD IT center!
+                  </span>
+                  <div class="button-wrapper">
+                    <button class="content-button status-button">
+                      More info
+                    </button>
+                    <div class="pop-up">
+                      <div class="pop-up__title">
+                        Brief info about project
+                        <svg
+                          class="close"
+                          width="24"
+                          height="24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-x-circle"
+                        >
+                          <circle cx="12" cy="12" r="10" />
+                          <path d="M15 9l-6 6M9 9l6 6" />
+                        </svg>
+                      </div>
+                      <div class="pop-up__subtitle">
+                        Ordered by
+                        <a href="https://t.me/saudabdulwahed"
+                          >Saud Abdulwahed</a
+                        >
+                        for giving information about "Haad LC IT center" to
+                        people who want to study at there... and has
+                        registration form for cources!
+                        <a href="https://t.me/vermino">Learn more</a>
+                      </div>
+                      <div class="content-button-wrapper">
+                        <button class="content-button status-button open close">
+                          Cancel
+                        </button>
+                        <button class="content-button status-button">
+                          Open bot
+                        </button>
+                      </div>
+                    </div>
+                    <div class="menu">
+                      <button class="dropdown">
+                        <ul>
+                          <li><a href="#">Go to Discover</a></li>
+                          <li><a href="#">Learn more</a></li>
+                          <li><a href="#">Uninstall</a></li>
+                        </ul>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="adobe-product">
+                  <div class="products">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="48"
+                      height="48"
+                      fill="none"
+                      viewBox="0 0 50 50"
+                      id="telegram"
+                    >
+                      <rect
+                        width="48"
+                        height="48"
+                        fill="#05f571"
+                        rx="24"
+                      ></rect>
+                      <rect
+                        width="48"
+                        height="48"
+                        fill="url(#paint0_linear)"
+                        rx="24"
+                      ></rect>
+                      <path
+                        fill="#fff"
+                        d="M10.7874 23.4709C17.7667 20.3663 22.4206 18.3195 24.7493 17.3305C31.3979 14.507 32.7795 14.0165 33.68 14.0002C33.878 13.9968 34.3208 14.0469 34.6077 14.2845C34.8499 14.4852 34.9165 14.7563 34.9484 14.9465C34.9803 15.1368 35.02 15.5702 34.9884 15.9088C34.6281 19.774 33.0692 29.1539 32.276 33.483C31.9404 35.3148 31.2796 35.929 30.6399 35.9891C29.2496 36.1197 28.1938 35.051 26.8473 34.1497C24.7401 32.7395 23.5498 31.8615 21.5044 30.4854C19.1407 28.895 20.673 28.0209 22.0201 26.5923C22.3726 26.2185 28.4983 20.5295 28.6169 20.0135C28.6317 19.9489 28.6455 19.7083 28.5055 19.5813C28.3655 19.4543 28.1589 19.4977 28.0098 19.5322C27.7985 19.5812 24.4323 21.8529 17.9113 26.3473C16.9558 27.0172 16.0904 27.3435 15.315 27.3264C14.4602 27.3076 12.8159 26.833 11.5935 26.4273C10.0942 25.9296 8.90254 25.6666 9.0063 24.8215C9.06035 24.3813 9.65403 23.9311 10.7874 23.4709Z"
+                      ></path>
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear"
+                          x1="24"
+                          x2="24"
+                          y2="47.644"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#2AABEE"></stop>
+                          <stop offset="1" stop-color="#229ED9"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+
+                    @foffnow
+                  </div>
+
+                  <span class="status">
+                    <span class="status-circle"></span>
+                    InfoBot for HAAD IT center!
+                  </span>
+                  <div class="button-wrapper">
+                    <button class="content-button status-button">
+                      More info
+                    </button>
+                    <div class="pop-up">
+                      <div class="pop-up__title">
+                        Popup test
+                        <svg
+                          class="close"
+                          width="24"
+                          height="24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-x-circle"
+                        >
+                          <circle cx="12" cy="12" r="10" />
+                          <path d="M15 9l-6 6M9 9l6 6" />
+                        </svg>
+                      </div>
+                      <div class="pop-up__subtitle">
+                        Ordered by
+                        <a href="https://t.me/saudabdulwahed"
+                          >Saud Abdulwahed</a
+                        >
+                        for giving information about "Haad LC IT center" to
+                        people who want to study at there... and has
+                        registration form for cources!
+                        <a href="https://t.me/vermino">Learn more</a>
+                      </div>
+                      <div class="content-button-wrapper">
+                        <button class="content-button status-button open close">
+                          Cancel
+                        </button>
+                        <button class="content-button status-button">
+                          Open bot
+                        </button>
+                      </div>
+                    </div>
+                    <div class="menu">
+                      <button class="dropdown">
+                        <ul>
+                          <li><a href="#">Go to Discover</a></li>
+                          <li><a href="#">Learn more</a></li>
+                          <li><a href="#">Uninstall</a></li>
+                        </ul>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="adobe-product">
+                  <div class="products">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="48"
+                      height="48"
+                      fill="none"
+                      viewBox="0 0 50 50"
+                      id="telegram"
+                    >
+                      <rect
+                        width="48"
+                        height="48"
+                        fill="#419FD9"
+                        rx="24"
+                      ></rect>
+                      <rect
+                        width="48"
+                        height="48"
+                        fill="url(#paint0_linear)"
+                        rx="24"
+                      ></rect>
+                      <path
+                        fill="#fff"
+                        d="M10.7874 23.4709C17.7667 20.3663 22.4206 18.3195 24.7493 17.3305C31.3979 14.507 32.7795 14.0165 33.68 14.0002C33.878 13.9968 34.3208 14.0469 34.6077 14.2845C34.8499 14.4852 34.9165 14.7563 34.9484 14.9465C34.9803 15.1368 35.02 15.5702 34.9884 15.9088C34.6281 19.774 33.0692 29.1539 32.276 33.483C31.9404 35.3148 31.2796 35.929 30.6399 35.9891C29.2496 36.1197 28.1938 35.051 26.8473 34.1497C24.7401 32.7395 23.5498 31.8615 21.5044 30.4854C19.1407 28.895 20.673 28.0209 22.0201 26.5923C22.3726 26.2185 28.4983 20.5295 28.6169 20.0135C28.6317 19.9489 28.6455 19.7083 28.5055 19.5813C28.3655 19.4543 28.1589 19.4977 28.0098 19.5322C27.7985 19.5812 24.4323 21.8529 17.9113 26.3473C16.9558 27.0172 16.0904 27.3435 15.315 27.3264C14.4602 27.3076 12.8159 26.833 11.5935 26.4273C10.0942 25.9296 8.90254 25.6666 9.0063 24.8215C9.06035 24.3813 9.65403 23.9311 10.7874 23.4709Z"
+                      ></path>
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear"
+                          x1="24"
+                          x2="24"
+                          y2="47.644"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#2AABEE"></stop>
+                          <stop offset="1" stop-color="#229ED9"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+
+                    @swiftsave_bot
+                  </div>
+                  <span class="status">
+                    <span class="status-circle green"></span>
+                    Social media downloader</span
+                  >
+                  <div class="button-wrapper">
+                    <button class="content-button status-button open">
+                      Open
+                    </button>
+                    <div class="menu">
+                      <button class="dropdown">
+                        <ul>
+                          <li><a href="#">Go to Discover</a></li>
+                          <li><a href="#">Learn more</a></li>
+                          <li><a href="#">Uninstall</a></li>
+                        </ul>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="content-section">
+              <div class="content-section-title">Other projects</div>
+              <div class="apps-card">
+                <div class="app-card">
+                  <span>
+                    <svg
+                      viewBox="0 0 512 512"
+                      style="border: 1px solid #a059a9"
+                    >
+                      <path
+                        xmlns="http://www.w3.org/2000/svg"
+                        d="M480 0H32C14.368 0 0 14.368 0 32v448c0 17.664 14.368 32 32 32h448c17.664 0 32-14.336 32-32V32c0-17.632-14.336-32-32-32z"
+                        fill="#210027"
+                        data-original="#7b1fa2"
+                      />
+                      <g xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M192 64h-80c-8.832 0-16 7.168-16 16v352c0 8.832 7.168 16 16 16s16-7.168 16-16V256h64c52.928 0 96-43.072 96-96s-43.072-96-96-96zm0 160h-64V96h64c35.296 0 64 28.704 64 64s-28.704 64-64 64zM400 256h-32c-18.08 0-34.592 6.24-48 16.384V272c0-8.864-7.168-16-16-16s-16 7.136-16 16v160c0 8.832 7.168 16 16 16s16-7.168 16-16v-96c0-26.464 21.536-48 48-48h32c8.832 0 16-7.168 16-16s-7.168-16-16-16z"
+                          fill="#f6e7fa"
+                          data-original="#e1bee7"
+                        />
+                      </g>
+                    </svg>
+                    Premiere Pro
+                  </span>
+                  <div class="app-card__subtext">
+                    Edit, master and create fully proffesional videos
+                  </div>
+                  <div class="app-card-buttons">
+                    <button class="content-button status-button">Update</button>
+                    <div class="menu"></div>
+                  </div>
+                </div>
+                <div class="app-card">
+                  <span>
+                    <svg viewBox="0 0 52 52" style="border: 1px solid #c1316d">
+                      <g xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M40.824 52H11.176C5.003 52 0 46.997 0 40.824V11.176C0 5.003 5.003 0 11.176 0h29.649C46.997 0 52 5.003 52 11.176v29.649C52 46.997 46.997 52 40.824 52z"
+                          fill="#2f0015"
+                          data-original="#6f2b41"
+                        />
+                        <path
+                          d="M18.08 39H15.2V13.72l-2.64-.08V11h5.52v28zM27.68 19.4c1.173-.507 2.593-.761 4.26-.761s3.073.374 4.22 1.12V11h2.88v28c-2.293.32-4.414.48-6.36.48-1.947 0-3.707-.4-5.28-1.2-2.08-1.066-3.12-2.92-3.12-5.561v-7.56c0-2.799 1.133-4.719 3.4-5.759zm8.48 3.12c-1.387-.746-2.907-1.119-4.56-1.119-1.574 0-2.714.406-3.42 1.22-.707.813-1.06 1.847-1.06 3.1v7.12c0 1.227.44 2.188 1.32 2.88.96.719 2.146 1.079 3.56 1.079 1.413 0 2.8-.106 4.16-.319V22.52z"
+                          fill="#e1c1cf"
+                          data-original="#ff70bd"
+                        />
+                      </g>
+                    </svg>
+                    InDesign
+                  </span>
+                  <div class="app-card__subtext">
+                    Design and publish great projects & mockups
+                  </div>
+                  <div class="app-card-buttons">
+                    <button class="content-button status-button">Update</button>
+                    <div class="menu"></div>
+                  </div>
+                </div>
+                <div class="app-card">
+                  <span>
+                    <svg viewBox="0 0 52 52" style="border: 1px solid #c75deb">
+                      <g xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M40.824 52H11.176C5.003 52 0 46.997 0 40.824V11.176C0 5.003 5.003 0 11.176 0h29.649C46.997 0 52 5.003 52 11.176v29.649C52 46.997 46.997 52 40.824 52z"
+                          fill="#3a3375"
+                          data-original="#3a3375"
+                        />
+                        <path
+                          d="M27.44 39H24.2l-2.76-9.04h-8.32L10.48 39H7.36l8.24-28h3.32l8.52 28zm-6.72-12l-3.48-11.36L13.88 27h6.84zM31.48 33.48c0 2.267 1.333 3.399 4 3.399 1.653 0 3.466-.546 5.44-1.64L42 37.6c-2.054 1.254-4.2 1.881-6.44 1.881-4.64 0-6.96-1.946-6.96-5.841v-8.2c0-2.16.673-3.841 2.02-5.04 1.346-1.2 3.126-1.801 5.34-1.801s3.94.594 5.18 1.78c1.24 1.187 1.86 2.834 1.86 4.94V30.8l-11.52.6v2.08zm8.6-5.24v-3.08c0-1.413-.44-2.42-1.32-3.021-.88-.6-1.907-.899-3.08-.899-1.174 0-2.167.359-2.98 1.08-.814.72-1.22 1.773-1.22 3.16v3.199l8.6-.439z"
+                          fill="#e4d1eb"
+                          data-original="#e7adfb"
+                        />
+                      </g>
+                    </svg>
+                    After Effects
+                  </span>
+                  <div class="app-card__subtext">
+                    Industry Standart motion graphics & visual effects
+                  </div>
+                  <div class="app-card-buttons">
+                    <button class="content-button status-button">Update</button>
+                    <div class="menu"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay-app"></div>
+    </div>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
